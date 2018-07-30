@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<CreditVendReq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<clientID xsi:type="EANDeviceID" ean="PH062"
+xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" /> 
+<terminalID xsi:type="EANDeviceID" ean="0000000000062"
+xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" /> 
+<msgID dateTime="20131015131337" uniqueNumber="691"
+xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" /> 
+<authCred xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<opName>OP62</opName> 
+<password>OP62</password> 
+</authCred>
+<resource xsi:type="Electricity"
+xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" /> 
+<idMethod xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<meterIdentifier xsi:type="MeterNumber" msno="04040406706" /> 
+</idMethod>
+<purchaseValue xsi:type="PurchaseValueCurrency"
+xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+<amt value="5000" symbol="ZAR" /> 
+</purchaseValue>
+<payType xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"
+xsi:type="q1:Cash"
+xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+<q1:tenderAmt value="5000" symbol="ZAR" /> 
+</payType>
+</CreditVendReq> 

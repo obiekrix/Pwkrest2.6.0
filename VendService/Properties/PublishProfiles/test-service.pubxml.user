@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Downloads\MobileAPI</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Dapper.dll">
+      <publishTime>07/22/2015 09:54:42</publishTime>
+    </File>
+    <File Include="bin/Dapper.pdb">
+      <publishTime>07/22/2015 09:54:42</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/24/2018 17:44:14</publishTime>
+    </File>
+    <File Include="bin/PwkApi.dll">
+      <publishTime>07/25/2018 20:01:15</publishTime>
+    </File>
+    <File Include="bin/PwkApi.pdb">
+      <publishTime>07/25/2018 20:01:15</publishTime>
+    </File>
+    <File Include="bin/PwkApi.XmlSerializers.dll">
+      <publishTime>07/25/2018 20:01:18</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/04/2018 14:22:42</publishTime>
+    </File>
+    <File Include="pawakad-logo.png">
+      <publishTime>08/03/2015 14:19:12</publishTime>
+    </File>
+    <File Include="Properties/Settings.settings">
+      <publishTime>09/30/2015 19:27:00</publishTime>
+    </File>
+    <File Include="svc/PawakadRESTWSNew2.svc">
+      <publishTime>06/20/2017 10:39:54</publishTime>
+    </File>
+    <File Include="svc/VendService.svc">
+      <publishTime>07/19/2015 19:23:40</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/AdviceResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/CancelPendingResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/CancelVendResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/ConfirmCustomerResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/ConfirmMeterResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/CreditVendResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/CustReportFaultResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/DepositResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/EndBatchResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/FBEResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/FreeIssueResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/GetVendingServerStateResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/MakeMerchantDepositResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/MeterCreditTransferResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/MeterSpecificEngResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/NonMeterSpecificEngResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/PayAccResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/ReprintDepositResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/ReprintEndBatchResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/ReprintResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/ReverseMerchantDepositResp.datasource">
+      <publishTime>01/07/2016 18:13:05</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/StartBatchResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/TotalBatchResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/TrialCreditVendResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/UpdateMeterKeyResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/VendorStatementResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/com.conlog.val.phb/VerifyResp.datasource">
+      <publishTime>01/07/2016 18:13:06</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/AdviceResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/CancelVendResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/ConfirmCustomerResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/ConfirmMeterResp.datasource">
+      <publishTime>07/19/2015 19:11:31</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/CreditVendResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/CustReportFaultResp.datasource">
+      <publishTime>07/19/2015 19:11:31</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/DepositResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/EndBatchResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/FBEResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/FreeIssueResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/GatewayServiceASP.disco">
+      <publishTime>07/19/2015 19:11:23</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/GatewayServiceASP.wsdl">
+      <publishTime>07/19/2015 19:11:23</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/GetVendingServerStateResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/MakeMerchantDepositResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/MeterCreditTransferResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/MeterSpecificEngResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/NonMeterSpecificEngResp.datasource">
+      <publishTime>07/19/2015 19:11:31</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/PayAccResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/Reference.map">
+      <publishTime>07/19/2015 19:11:24</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/ReprintDepositResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/ReprintEndBatchResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/ReprintResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/ReverseMerchantDepositResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/StartBatchResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/TotalBatchResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/TrialCreditVendResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/UpdateMeterKeyResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/VendorStatementResp.datasource">
+      <publishTime>07/19/2015 19:11:29</publishTime>
+    </File>
+    <File Include="Web References/XmlVend/VerifyResp.datasource">
+      <publishTime>07/19/2015 19:11:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/20/2018 10:30:05</publishTime>
+    </File>
+    <File Include="webtst/accountPaymentFrm.aspx">
+      <publishTime>08/13/2015 02:05:14</publishTime>
+    </File>
+    <File Include="webtst/CancelFrm.aspx">
+      <publishTime>08/14/2015 17:18:52</publishTime>
+    </File>
+    <File Include="webtst/confirmCust.aspx">
+      <publishTime>08/13/2015 01:59:18</publishTime>
+    </File>
+    <File Include="webtst/confirmCustomerFrm.aspx">
+      <publishTime>08/03/2015 14:02:24</publishTime>
+    </File>
+    <File Include="webtst/confirmMeter.aspx">
+      <publishTime>08/26/2015 15:32:12</publishTime>
+    </File>
+    <File Include="webtst/creditVendFrm.aspx">
+      <publishTime>08/13/2015 01:08:56</publishTime>
+    </File>
+    <File Include="webtst/kct_testfrm.aspx">
+      <publishTime>08/19/2015 09:23:34</publishTime>
+    </File>
+    <File Include="webtst/LastResponseFrm.aspx">
+      <publishTime>08/13/2015 02:49:14</publishTime>
+    </File>
+    <File Include="webtst/listDb.aspx">
+      <publishTime>08/25/2015 16:55:42</publishTime>
+    </File>
+    <File Include="webtst/msgIDGenTest.aspx">
+      <publishTime>11/30/2015 12:04:08</publishTime>
+    </File>
+    <File Include="webtst/reprintFrm.aspx">
+      <publishTime>08/13/2015 03:09:52</publishTime>
+    </File>
+    <File Include="webtst/TrialCreditVend.aspx">
+      <publishTime>09/12/2015 09:05:56</publishTime>
+    </File>
+    <File Include="webtst/WebForm1.aspx">
+      <publishTime>07/22/2015 08:14:40</publishTime>
+    </File>
+    <File Include="webtst/WebForm2.aspx">
+      <publishTime>07/22/2015 14:47:36</publishTime>
+    </File>
+    <File Include="webtst/WebForm3.aspx">
+      <publishTime>07/26/2015 20:56:58</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

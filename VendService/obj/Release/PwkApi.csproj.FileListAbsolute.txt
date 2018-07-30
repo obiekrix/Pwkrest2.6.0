@@ -1,0 +1,90 @@
+C:\Users\deji\documents\visual studio 2012\Projects\WcfService1\WcfService1\bin\PwkApi.dll
+C:\Users\deji\documents\visual studio 2012\Projects\WcfService1\WcfService1\bin\PwkApi.pdb
+C:\Users\deji\documents\visual studio 2012\Projects\WcfService1\WcfService1\obj\Release\PwkApi.dll
+C:\Users\deji\documents\visual studio 2012\Projects\WcfService1\WcfService1\obj\Release\PwkApi.pdb
+C:\Users\deji\Documents\Visual Studio 2012\Projects\WcfService1\WcfService1\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+C:\Users\deji\Documents\Visual Studio 2012\Projects\WcfService1\WcfService1\bin\PwkApi.XmlSerializers.dll
+C:\Users\deji\Documents\Visual Studio 2012\Projects\WcfService1\WcfService1\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\deji\Documents\Visual Studio 2012\Projects\WcfService1\WcfService1\bin\Dapper.dll
+C:\Users\deji\Documents\Visual Studio 2012\Projects\WcfService1\WcfService1\bin\Dapper.pdb
+C:\Users\deji\Documents\Visual Studio 2012\Projects\WcfService1\WcfService1\bin\Dapper.xml
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\bin\PwkApi.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\bin\PwkApi.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\bin\Dapper.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\bin\Dapper.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\bin\Dapper.xml
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\obj\Release\PwkApi.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\obj\Release\PwkApi.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkApi\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\bin\PwkApi.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\bin\PwkApi.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\bin\Dapper.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\bin\Dapper.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\bin\Dapper.xml
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\obj\Release\PwkApi.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\obj\Release\PwkApi.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\VendService\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\bin\PwkApi.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\bin\PwkApi.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\bin\Dapper.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\bin\Dapper.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\bin\Dapper.xml
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\obj\Release\PwkApi.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\obj\Release\PwkApi.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-01-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\bin\PwkApi.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\bin\PwkApi.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\bin\Dapper.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\bin\Dapper.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\bin\Dapper.xml
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\obj\Release\PwkApi.dll
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\obj\Release\PwkApi.pdb
+C:\Users\deji\Dropbox\Cyris_projects\PwkLiveApi\Deji-apilive-12-dec-2015-source-code-with-serverID-removed-UniqueTransId-Fixed-responsedate-second-fixed\VendService\obj\Release\PwkApi.XmlSerializers.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\bin\PwkApi.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\bin\PwkApi.XmlSerializers.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\bin\PwkApi.pdb
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\bin\Dapper.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\bin\Dapper.pdb
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\bin\Dapper.xml
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\obj\Release\PwkApi.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\obj\Release\PwkApi.pdb
+G:\OriginalLive\apilive-12-dec-2015-prestine\VendService\obj\Release\PwkApi.XmlSerializers.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\obj\Release\PwkApi.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\obj\Release\PwkApi.pdb
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\obj\Release\PwkApi.XmlSerializers.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\bin\PwkApi.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\bin\PwkApi.XmlSerializers.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\bin\PwkApi.pdb
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\bin\Dapper.dll
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\bin\Dapper.pdb
+G:\OriginalLive\apilive-12-dec-2015-prestine - TestConlogCopy\VendService\bin\Dapper.xml
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\bin\PwkApi.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\bin\PwkApi.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\bin\Dapper.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\bin\Dapper.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\bin\Dapper.xml
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\obj\Release\PwkApi.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\obj\Release\PwkApi.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Chan\DM_Chan_API\ConlogAPI\ConlogAPI_160323\Src\ConlogAPI_Source_160323\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\obj\Release\PwkApi.csprojResolveAssemblyReference.cache
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\obj\Release\PwkApi.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\obj\Release\PwkApi.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\PwkApi.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\PwkApi.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\Dapper.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\Dapper.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\Dapper.xml

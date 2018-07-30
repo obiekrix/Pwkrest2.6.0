@@ -1,0 +1,67 @@
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\obj\Release\MobileAPI.csprojResolveAssemblyReference.cache
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\obj\Release\PwkApi.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\obj\Release\PwkApi.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\PwkApi.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\PwkApi.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\Dapper.dll
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\Dapper.pdb
+C:\Users\Pawakad_Christian\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\VendService\bin\Dapper.xml
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\obj\Release\MobileAPI.csprojResolveAssemblyReference.cache
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\obj\Release\MobileAPI.csproj.CoreCompileInputs.cache
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\obj\Release\PwkApi.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\obj\Release\PwkApi.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\PwkApi.dll.config
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\PwkApi.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\PwkApi.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\Dapper.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\Newtonsoft.Json.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\Dapper.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\Dapper.xml
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\MobileAPI_1.0.0\source\VendService\bin\Newtonsoft.Json.xml
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\PwkApi.dll.config
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\PwkApi.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\PwkApi.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\Dapper.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\Newtonsoft.Json.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\Dapper.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\Dapper.xml
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\bin\Newtonsoft.Json.xml
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\obj\Release\MobileAPI.csprojResolveAssemblyReference.cache
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\obj\Release\MobileAPI.csproj.CoreCompileInputs.cache
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\obj\Release\PwkApi.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\obj\Release\PwkApi.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.1\source\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\PwkApi.dll.config
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\PwkApi.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\PwkApi.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\Dapper.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\Newtonsoft.Json.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\Dapper.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\Dapper.xml
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\bin\Newtonsoft.Json.xml
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\obj\Release\MobileAPI.csprojResolveAssemblyReference.cache
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\obj\Release\MobileAPI.csproj.CoreCompileInputs.cache
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\obj\Release\PwkApi.dll
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\obj\Release\PwkApi.pdb
+C:\Users\Pawakad Dev\Dropbox\PWK_Tech\Pwk_App\IE\MobileAPI\Pwkrest2.6.2\source\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\obj\Release\MobileAPI.csproj.CoreCompileInputs.cache
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\obj\Release\PwkApi.dll
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\obj\Release\PwkApi.pdb
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\obj\Release\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\PwkApi.dll.config
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\PwkApi.dll
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\PwkApi.XmlSerializers.dll
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\PwkApi.pdb
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\Dapper.dll
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\Newtonsoft.Json.dll
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\Dapper.pdb
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\Dapper.xml
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\bin\Newtonsoft.Json.xml
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\obj\Release\MobileAPI.csprojAssemblyReference.cache
+C:\Users\Pawakad Dev\Desktop\DM\Pwkrest2.6.2\source\VendService\obj\Release\MobileAPI.csproj.CopyComplete

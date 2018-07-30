@@ -1,0 +1,450 @@
+Credit Vend request for cancellation
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<soap:Body>
+<creditVendReq xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+<clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<msgID dateTime="20151004082322" uniqueNumber="1931" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<authCred xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<opName>OP62</opName>
+<password>OP62</password>
+</authCred>
+<resource xsi:type="Electricity" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<idMethod xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<meterIdentifier xsi:type="MeterNumber" msno="04040406714" />
+</idMethod>
+<purchaseValue xsi:type="PurchaseValueCurrency">
+<amt value="1000" symbol="ZAR" />
+</purchaseValue>
+<payType xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" xsi:type="q1:Cash">
+<q1:tenderAmt value="1000" symbol="ZAR" />
+</payType>
+</creditVendReq>
+</soap:Body>
+</soap:Envelope> 
+
+Credit Vend Response for cancellation
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <creditVendResp xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+         <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <serverID xsi:type="GenericDeviceID" id="2" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <reqMsgID dateTime="20151004082322" uniqueNumber="1931" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <respDateTime xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">2015-10-04T23:03:05.6737003+02:00</respDateTime>
+         <dispHeader xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase</dispHeader>
+         <operatorMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase successful</operatorMsg>
+         <custMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase</custMsg>
+         <utility name="IKEJA" address="IKEJA" taxRef="0" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <clientStatus xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+            <availCredit value="99874419.00" symbol="NGN"/>
+            <batchStatus banking="open" sales="open" shift="open"/>
+         </clientStatus>
+         <vendor name="Conlog" address="270 Felix Dlamini Rd, Overport, Durban" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <custVendDetail name="PAWAKAD1, TS" address="" accNo="04040406714" locRef="04040406714" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <creditVendReceipt receiptNo="PH062/1145">
+            <transactions>
+               <tx xsi:type="CreditVendTx" receiptNo="PH062/1145">
+                  <amt value="788.14"/>
+                  <creditTokenIssue xsi:type="q1:SaleCredTokenIssue" xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+                     <q1:desc>Credit Token</q1:desc>
+                     <q1:meterDetail msno="04040406714" sgc="399999" krn="1" ti="10">
+                        <q1:meterType tt="02"/>
+                     </q1:meterDetail>
+                     <q1:token xsi:type="q1:STS1Token">
+                        <q1:stsCipher>01234567890123456789</q1:stsCipher>
+                     </q1:token>
+                     <q1:units value="788.2" siUnit="KWh"/>
+                     <q1:resource xsi:type="q1:Electricity"/>
+                  </creditTokenIssue>
+                  <tariff>
+                     <name xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">NEW TARIFF 10</name>
+                  </tariff>
+                  <tariffBreakdown xsi:type="q2:StepTariffBreakdown" xmlns:q2="http://www.conlog.co.za/xmlvend/base-ext/2.1.1/schema">
+                     <q2:steps>
+                        <q2:Step>
+                           <q2:units value="788.14" siUnit="KWh"/>
+                           <q2:rate value="1.00" symbol="NGN"/>
+                        </q2:Step>
+                     </q2:steps>
+                  </tariffBreakdown>
+               </tx>
+               <tx xsi:type="ServiceChrgTx">
+                  <amt value="141.86" symbol="NGN"/>
+                  <accDesc>Tax</accDesc>
+                  <accNo>04040406714</accNo>
+               </tx>
+               <tx xsi:type="DebtRecoveryTx" receiptNo="PH062/1145">
+                  <amt value="70.00" symbol="NGN"/>
+                  <accDesc>ARREAR</accDesc>
+                  <accNo>04040406714</accNo>
+                  <balance value="4973890.00" symbol="NGN"/>
+               </tx>
+               <tenderAmt value="1000.00"/>
+               <change value="0.00"/>
+            </transactions>
+         </creditVendReceipt>
+      </creditVendResp>
+   </soap:Body>
+</soap:Envelope>
+
+Cancel Request
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <cancelVendReq xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+<clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<msgID dateTime="20151004082322" uniqueNumber="1631" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<authCred xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<opName>OP62</opName>
+<password>OP62</password>
+</authCred>
+<resource xsi:type="Electricity" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" /> 
+<idMethod xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<meterIdentifier xsi:type="MeterNumber" msno="04040406714" />
+</idMethod>
+<TransactionNumber>1145</TransactionNumber>
+<CDUID ean="PH062" />
+    </cancelVendReq>
+  </soap:Body>
+</soap:Envelope>
+
+
+Cancel Response
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <cancelVendResp cancelRefNo="1147" xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+         <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <serverID xsi:type="GenericDeviceID" id="2" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <reqMsgID dateTime="20151004082322" uniqueNumber="1631" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <respDateTime xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">2015-10-05T09:37:28.3244863+02:00</respDateTime>
+         <dispHeader xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Token Cancellation</dispHeader>
+         <operatorMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Transaction Cancelled Successfully</operatorMsg>
+         <custMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Token Cancellation</custMsg>
+         <utility name="IKEJA" address="IKEJA" taxRef="0" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <clientStatus xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+            <availCredit value="99875419.00" symbol="NGN"/>
+            <batchStatus banking="open" sales="open" shift="open"/>
+         </clientStatus>
+         <vendor name="Conlog" address="270 Felix Dlamini Rd, Overport, Durban" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <custVendDetail name="PAWAKAD1, TS" address="" accNo="04040406714" locRef="04040406714" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <origTx receiptNo="PH062/1145">
+            <amt value="1000.00" symbol="NGN"/>
+            <creditTokenIssue>
+               <meterDetail msno="04040406714" sgc="399999" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+               <units value="788.2" siUnit="kWh" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+            </creditTokenIssue>
+            <tariff>
+               <name xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">10</name>
+               <desc xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">NEW TARIFF 10</desc>
+            </tariff>
+         </origTx>
+      </cancelVendResp>
+   </soap:Body>
+</soap:Envelope>
+
+Reprint Request 04040406714
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <reprintReq xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+    <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<msgID dateTime="20151004082322" uniqueNumber="19312" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<authCred xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<opName>OP62</opName>
+<password>OP62</password>
+</authCred>
+<idMethod xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" xsi:type="q1:VendIDMethod" xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+<q1:meterIdentifier xsi:type="q1:MeterNumber" msno="04040406714" /> 
+</idMethod>
+    </reprintReq>
+  </soap:Body>
+</soap:Envelope>
+
+Reprint Response 04040406714
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <reprintResp xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+         <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <serverID xsi:type="GenericDeviceID" id="2" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <reqMsgID dateTime="20151004082322" uniqueNumber="19312" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <respDateTime xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">2015-10-04T23:40:55.1627522+02:00</respDateTime>
+         <dispHeader xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Transaction Reprint</dispHeader>
+         <operatorMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Transaction Reprint</operatorMsg>
+         <custMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Transaction Reprint</custMsg>
+         <utility name="IKEJA" address="IKEJA" taxRef="0" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <clientStatus xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+            <availCredit value="0"/>
+            <batchStatus banking="open" sales="open" shift="open"/>
+         </clientStatus>
+         <vendor name="Conlog" address="270 Felix Dlamini Rd, Overport, Durban" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <reprint xsi:type="CreditVendResp">
+            <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+            <terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+            <respDateTime xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">2015-10-04T23:03:05</respDateTime>
+            <dispHeader xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase</dispHeader>
+            <operatorMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase successful</operatorMsg>
+            <custMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase</custMsg>
+            <clientStatus xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+               <availCredit value="99874419.00"/>
+            </clientStatus>
+            <custVendDetail name="PAWAKAD1, TS" address="" accNo="04040406714" locRef="04040406714" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+            <creditVendReceipt receiptNo="PH062/1145">
+               <transactions>
+                  <tx xsi:type="CreditVendTx" receiptNo="PH062/1145">
+                     <amt value="788.14"/>
+                     <creditTokenIssue xsi:type="q1:SaleCredTokenIssue" xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+                        <q1:desc>Credit Token</q1:desc>
+                        <q1:meterDetail msno="04040406714" sgc="399999" krn="1" ti="10">
+                           <q1:meterType tt="02"/>
+                        </q1:meterDetail>
+                        <q1:token xsi:type="q1:STS1Token">
+                           <q1:stsCipher>01234567890123456789</q1:stsCipher>
+                        </q1:token>
+                        <q1:units value="0" siUnit="KWh"/>
+                        <q1:resource xsi:type="q1:Electricity"/>
+                     </creditTokenIssue>
+                     <tariff>
+                        <name xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">NEW TARIFF 10</name>
+                     </tariff>
+                     <tariffBreakdown xsi:type="q2:StepTariffBreakdown" xmlns:q2="http://www.conlog.co.za/xmlvend/base-ext/2.1.1/schema">
+                        <q2:steps>
+                           <q2:Step>
+                              <q2:units value="788.14" siUnit="KWh"/>
+                              <q2:rate value="1.00" symbol="NGN"/>
+                           </q2:Step>
+                        </q2:steps>
+                     </tariffBreakdown>
+                  </tx>
+                  <tx xsi:type="ServiceChrgTx">
+                     <amt value="141.86" symbol="NGN"/>
+                     <accDesc>Tax</accDesc>
+                     <accNo>04040406714</accNo>
+                  </tx>
+                  <tx xsi:type="DebtRecoveryTx" receiptNo="PH062/1145">
+                     <amt value="70.00" symbol="NGN"/>
+                     <accDesc>ARREAR</accDesc>
+                     <accNo>04040406714</accNo>
+                     <balance value="4973890.00" symbol="NGN"/>
+                  </tx>
+                  <tenderAmt value="1000.00"/>
+                  <change value="0.00"/>
+               </transactions>
+            </creditVendReceipt>
+         </reprint>
+      </reprintResp>
+   </soap:Body>
+</soap:Envelope>
+
+
+Reprint Request 04040406706
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <reprintReq xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+    <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<msgID dateTime="20151004082321" uniqueNumber="1931" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<authCred xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<opName>OP62</opName>
+<password>OP62</password>
+</authCred>
+<idMethod xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" xsi:type="q1:VendIDMethod" xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+<q1:meterIdentifier xsi:type="q1:MeterNumber" msno="04040406706" /> 
+</idMethod>
+    </reprintReq>
+  </soap:Body>
+</soap:Envelope>
+
+
+Reprint Response 04040406706
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <soap:Fault>
+         <faultcode>soap:Server</faultcode>
+         <faultstring>System.Web.Services.Protocols.SoapException: Soap Exception From Server
+   at Conlog.PowerHub.GatewayService.Web.GatewayServiceAdapter.Dispatch[RequestMessageType,ResponseMessageType](RequestMessageType message, DeviceID vendingClientDeviceID, DeviceID vendingTerminalDeviceID, MsgID clientMessageID, Boolean requiresSessionBatch, Boolean meterNumberRouting, MeterIdentifier meterIdentifier, Boolean overrideHunt)
+   at Conlog.PowerHub.GatewayService.Web.XMLVendService.ReprintRequest(ReprintReq reprintReq)</faultstring>
+         <faultactor>url</faultactor>
+         <detail>
+            <XMLVendFaultResp>
+               <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+               <serverID xsi:type="GenericDeviceID" id="2" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+               <terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+               <reqMsgID dateTime="20151004082321" uniqueNumber="1931" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+               <respDateTime xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">2015-10-04T23:38:51.3151461+02:00</respDateTime>
+               <dispHeader xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Vending Server Cluster Error</dispHeader>
+               <operatorMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">There was a fault at the server processing the request</operatorMsg>
+               <fault xsi:type="ReprintEx" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+                  <desc>There are no transactions to reissue for this customer</desc>
+               </fault>
+            </XMLVendFaultResp>
+         </detail>
+      </soap:Fault>
+   </soap:Body>
+</soap:Envelope>
+
+Key Change Token Request
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<soap:Body><creditVendReq xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+<clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<msgID dateTime="20151003092322" uniqueNumber="7231" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<authCred xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<opName>OP62</opName>
+<password>OP62</password>
+</authCred>
+<resource xsi:type="Electricity" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+<idMethod xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+<meterIdentifier xsi:type="MeterNumber" msno="04040404230" />
+</idMethod>
+<purchaseValue xsi:type="PurchaseValueCurrency">
+<amt value="75" symbol="ZAR" />
+</purchaseValue>
+<payType xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" xsi:type="q1:Cash">
+<q1:tenderAmt value="75" symbol="ZAR" />
+</payType>
+</creditVendReq>
+</soap:Body>
+</soap:Envelope> 
+
+Key Change Token Response
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <creditVendResp xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+         <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <serverID xsi:type="GenericDeviceID" id="2" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <reqMsgID dateTime="20151003092322" uniqueNumber="7231" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <respDateTime xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">2015-10-04T23:32:43.0483068+02:00</respDateTime>
+         <dispHeader xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase</dispHeader>
+         <operatorMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase successful</operatorMsg>
+         <custMsg xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">Credit Purchase</custMsg>
+         <utility name="IKEJA" address="IKEJA" taxRef="0" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <clientStatus xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+            <availCredit value="99874344.00" symbol="NGN"/>
+            <batchStatus banking="open" sales="open" shift="open"/>
+         </clientStatus>
+         <vendor name="Conlog" address="270 Felix Dlamini Rd, Overport, Durban" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <custVendDetail name="TEST, TS" address="" accNo="04040404230" locRef="04040404230" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <creditVendReceipt receiptNo="PH062/1146">
+            <transactions>
+               <tx xsi:type="CreditVendTx">
+                  <creditTokenIssue xsi:type="q1:SaleCredTokenIssue" xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+                     <q1:desc>KeyChange Token1</q1:desc>
+                     <q1:meterDetail sgc="399999"/>
+                     <q1:token xsi:type="q1:STS1Token">
+                        <q1:stsCipher>12452435567534544563</q1:stsCipher>
+                     </q1:token>
+                     <q1:units value="0" siUnit="kWh"/>
+                  </creditTokenIssue>
+               </tx>
+               <tx xsi:type="CreditVendTx">
+                  <creditTokenIssue xsi:type="q2:SaleCredTokenIssue" xmlns:q2="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+                     <q2:desc>KeyChange Token2</q2:desc>
+                     <q2:meterDetail sgc="399999"/>
+                     <q2:token xsi:type="q2:STS1Token">
+                        <q2:stsCipher>45745784456476852435</q2:stsCipher>
+                     </q2:token>
+                     <q2:units value="0" siUnit="kWh"/>
+                  </creditTokenIssue>
+               </tx>
+               <tx xsi:type="CreditVendTx" receiptNo="PH062/1146">
+                  <amt value="63.56"/>
+                  <creditTokenIssue xsi:type="q3:SaleCredTokenIssue" xmlns:q3="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+                     <q3:desc>Credit Token</q3:desc>
+                     <q3:meterDetail msno="04040404230" sgc="399999" krn="1" ti="10">
+                        <q3:meterType tt="02"/>
+                     </q3:meterDetail>
+                     <q3:token xsi:type="q3:STS1Token">
+                        <q3:stsCipher>01234567890123456789</q3:stsCipher>
+                     </q3:token>
+                     <q3:units value="63.6" siUnit="KWh"/>
+                     <q3:resource xsi:type="q3:Electricity"/>
+                  </creditTokenIssue>
+                  <tariff>
+                     <name xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">NEW TARIFF 10</name>
+                  </tariff>
+                  <tariffBreakdown xsi:type="q4:StepTariffBreakdown" xmlns:q4="http://www.conlog.co.za/xmlvend/base-ext/2.1.1/schema">
+                     <q4:steps>
+                        <q4:Step>
+                           <q4:units value="63.56" siUnit="KWh"/>
+                           <q4:rate value="1.00" symbol="NGN"/>
+                        </q4:Step>
+                     </q4:steps>
+                  </tariffBreakdown>
+               </tx>
+               <tx xsi:type="ServiceChrgTx">
+                  <amt value="11.44" symbol="NGN"/>
+                  <accDesc>Tax</accDesc>
+                  <accNo>04040404230</accNo>
+               </tx>
+               <tenderAmt value="75.00"/>
+               <change value="0.00"/>
+            </transactions>
+         </creditVendReceipt>
+      </creditVendResp>
+   </soap:Body>
+</soap:Envelope>
+
+Account Payment Request --with vending server Id
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <soap:Body>
+  <payAccReq xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+   <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+   <terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+   <msgID dateTime="20150831171758" uniqueNumber="551" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" />
+   <authCred xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+    <opName>OP62</opName>
+    <password>OP62</password>
+   </authCred>
+   <reqAmt value="500" symbol="ZAR" />
+   <payType xmlns:q1="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" xsi:type="q1:Cash">
+    <q1:tenderAmt value="50" symbol="ZAR" />
+   </payType>
+   <payAccount xsi:type="DebtRecovery">
+    <idMethod xmlns:q2="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema" xsi:type="q2:CustIDMethod">
+     <q2:custIdentifier xsi:type="q2:CustAccountNo" accNo="ARREAR04040404503YE" />
+    </idMethod>
+   </payAccount>
+   <vendingServerId xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">2</vendingServerId>
+  </payAccReq>
+ </soap:Body>
+</soap:Envelope>
+
+
+Account Payment Response --with vending server Id
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <payAccResp xmlns="http://www.nrs.eskom.co.za/xmlvend/revenue/2.1/schema">
+         <clientID xsi:type="EANDeviceID" ean="PH062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <serverID xsi:type="GenericDeviceID" id="2" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <terminalID xsi:type="EANDeviceID" ean="0000000000062" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <reqMsgID dateTime="20150831171758" uniqueNumber="551" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <respDateTime xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">2015-10-05T09:40:22.7937679+02:00</respDateTime>
+         <utility name="IKEJA" address="IKEJA" taxRef="0" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <clientStatus xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema">
+            <availCredit value="99874844.00" symbol="NGN"/>
+            <batchStatus banking="open" sales="open" shift="open"/>
+         </clientStatus>
+         <vendor name="Conlog" address="270 Felix Dlamini Rd, Overport, Durban" xmlns="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"/>
+         <payAccReceipt receiptNo="1148">
+            <transactions>
+               <tx xsi:type="DebtRecoveryTx" receiptNo="1148">
+                  <amt value="500"/>
+                  <accDesc>ARREAR</accDesc>
+                  <accNo>ARREAR04040404503YE</accNo>
+                  <balance value="-11067.00"/>
+               </tx>
+            </transactions>
+         </payAccReceipt>
+      </payAccResp>
+   </soap:Body>
+</soap:Envelope>
