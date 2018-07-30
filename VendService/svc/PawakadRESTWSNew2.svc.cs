@@ -78,7 +78,9 @@ namespace PwkRESTWS
 
                 if (acctNoOrMeterNo != "0000000000")
                 {
-                    returnString = wsc.GetJSON(String.Format(acctNoOrMeterNo.Length == 11 ? "/TrialCreditVend{0}" : "/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + getVars + "&channelRefNo=" + channelRefNo));
+                    //returnString = wsc.GetJSON(String.Format(acctNoOrMeterNo.Length == 11 ? "/TrialCreditVend{0}" : "/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + getVars + "&channelRefNo=" + channelRefNo));
+                    returnString = wsc.GetJSON(String.Format("/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + "meterNumber=" + acctNoOrMeterNo + "&paymentChannel=" + dcode + "&channelRefNo=" + channelRefNo));
+
                 }
                 else
                 {
@@ -110,8 +112,8 @@ namespace PwkRESTWS
 
                 //this IF is necessary for new meter nums that fails on first vend by returning 'Amount is insufficient' error
                 //when a value lesser than the required amount is paid, or null when the required amount or more is paid
-                if (returnString == null || returnString == "")
-                    returnString = wsc.GetJSON(String.Format("/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + "meterNumber=" + acctNoOrMeterNo + "&paymentChannel=" + dcode + "&channelRefNo=" + channelRefNo));
+                //if (returnString == null || returnString == "")
+                //    returnString = wsc.GetJSON(String.Format("/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + "meterNumber=" + acctNoOrMeterNo + "&paymentChannel=" + dcode + "&channelRefNo=" + channelRefNo));
 
                 if (returnString == null || returnString == "")
                 {

@@ -21,13 +21,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/24/2018 17:44:14</publishTime>
     </File>
     <File Include="bin/PwkApi.dll">
-      <publishTime>07/25/2018 20:01:15</publishTime>
+      <publishTime>07/30/2018 13:10:44</publishTime>
     </File>
     <File Include="bin/PwkApi.pdb">
-      <publishTime>07/25/2018 20:01:15</publishTime>
+      <publishTime>07/30/2018 13:10:44</publishTime>
     </File>
     <File Include="bin/PwkApi.XmlSerializers.dll">
-      <publishTime>07/25/2018 20:01:18</publishTime>
+      <publishTime>07/30/2018 13:10:47</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>06/04/2018 14:22:42</publishTime>
