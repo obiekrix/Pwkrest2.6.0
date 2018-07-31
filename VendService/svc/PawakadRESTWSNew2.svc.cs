@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using pawakadApp;
-//using pawakadApp.Admin;
+using pawakadApp.Admin;
 using pawakadApp.Cls;
 using pawakadApp.ClsAdmin;
 using pawakadApp.ClsCard;
@@ -21,7 +21,6 @@ using System.Runtime.Serialization;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Web;
 
 namespace PwkRESTWS
@@ -42,7 +41,7 @@ namespace PwkRESTWS
 
             string tDate = DateTime.Today.ToString("yyMMdd").Replace("/", "");
             string paymentType = new PaymentType().GetPaymentType(acctNoOrMeterNo);
-            string channelRefNo = (paymentType == "PREPAID" ? "MT" : "MB") + tDate + dl.GetDealerCode(dealerName).ToString() + "_" + guid.ToString() + $"*{mtid.Substring(mtid.IndexOf("|") + 1)}";
+            string channelRefNo = (paymentType == "PREPAID" ? "MT" : "MB") + tDate + dl.GetDealerCode(dealerName).ToString() + "_" + guid.ToString();
 
             if (RequestIsValid(dealerName, password))
             {
@@ -78,8 +77,8 @@ namespace PwkRESTWS
 
                 if (acctNoOrMeterNo != "0000000000")
                 {
-                    returnString = wsc.GetJSON(String.Format(acctNoOrMeterNo.Length == 11 ? "/TrialCreditVend{0}" : "/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + getVars + "&channelRefNo=" + channelRefNo));
-                    
+                    //returnString = wsc.GetJSON(String.Format(acctNoOrMeterNo.Length == 11 ? "/TrialCreditVend{0}" : "/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + getVars + "&channelRefNo=" + channelRefNo));
+                    returnString = wsc.GetJSON(String.Format("/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + "meterNumber=" + acctNoOrMeterNo + "&paymentChannel=" + dcode + "&channelRefNo=" + channelRefNo));
                 }
                 else
                 {
@@ -111,8 +110,8 @@ namespace PwkRESTWS
 
                 //this IF is necessary for new meter nums that fails on first vend by returning 'Amount is insufficient' error
                 //when a value lesser than the required amount is paid, or null when the required amount or more is paid
-                if (returnString == null || returnString == "")
-                    returnString = wsc.GetJSON(String.Format("/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + "meterNumber=" + acctNoOrMeterNo + "&paymentChannel=" + dcode + "&channelRefNo=" + channelRefNo));
+                //if (returnString == null || returnString == "")
+                //    returnString = wsc.GetJSON(String.Format("/confirmcustomer{0}", "?" + Misc.GetClientId + "&" + "meterNumber=" + acctNoOrMeterNo + "&paymentChannel=" + dcode + "&channelRefNo=" + channelRefNo));
 
                 if (returnString == null || returnString == "")
                 {
@@ -140,9 +139,7 @@ namespace PwkRESTWS
                     return returnString2;
                 }
 
-                string returnString3 = "1|customerName_address_fixedCharge_conlogTID_warningNsg_flag" + (mtid.IndexOf("|") != -1 ? "_channelRefNo" : "") + "_AccountType_DtName_DtNumber_OrgName_OrgNo|" + customerName + "|" + address + "|" + fixedCharge + "|" + tokens[2] + "|" + warning + "|" + flag + (mtid.IndexOf("|") != -1 ? "|" + channelRefNo : "");
-                returnString3 += $"|{tokens[9]}|{tokens[10]}|{tokens[11]}|{tokens[12]}|{tokens[13]}";
-                //string returnString3 = "1|customerName_address_fixedCharge_conlogTID_warningNsg_flag" + (mtid.IndexOf("|") != -1 ? "_channelRefNo" : "") + "|" + customerName + "|" + address + "|" + fixedCharge + "|" + tokens[2] + "|" + warning + "|" + flag + (mtid.IndexOf("|") != -1 ? "|" + channelRefNo : "");
+                string returnString3 = "1|customerName_address_fixedCharge_conlogTID_warningNsg_flag" + (mtid.IndexOf("|") != -1 ? "_channelRefNo" : "") + "|" + customerName + "|" + address + "|" + fixedCharge + "|" + tokens[2] + "|" + warning + "|" + flag + (mtid.IndexOf("|") != -1 ? "|" + channelRefNo : "");
                 //log the mobile request
                 ClsPayment.LogMobileRequest2(dl.GetDealerCode(dealerName).ToString(), DateTime.Now, mtid, "ValidateCustomerAndEPIN", returnString3 + "|" + amt, channelRefNo);
 
@@ -159,8 +156,7 @@ namespace PwkRESTWS
         }
 
         public string SubmitPayment(string meterNo, string amt, string dealerName, string custName, string custAddress, string crCode, string fixedCharge2,
-            string conlogTID, string password, string mtid, string channelRefNo, string phoneNo, string collectionType = "NRG",
-            string accountType = "", string orgName = "", string orgNo = "", string invoiceNo = "", string businessUnit = "")
+            string conlogTID, string password, string mtid, string channelRefNo, string collectionType = "NRG", string invoiceNo = "", string businessUnit = "")
         {
             string errorMsg = "";
             ClsLog cl = new ClsLog();
@@ -173,19 +169,8 @@ namespace PwkRESTWS
 
             if (RequestIsValid(dealerName, password))
             {
-                bool phoneIsNeeded = int.Parse(new pawakadApp.ClsCard.ClsCards().RunThisQuery2("select convert(varchar,count(id)) from ControlTable where phoneCheck='true'")) > 0;
-
-                if (phoneIsNeeded && new Regex(@"^0[789][01]\d{8}$").Match(phoneNo).Success == false)
-                {
-                    errorMsg = "0|A valid phone number is required";
-                    cl.LogPaymentError(meterNo, "", int.Parse(amt), errorMsg, "PAYMENT", DateTime.Now);
-
-                    return errorMsg;
-                }
-
                 return pawakadApp.PwkRESTWS.utilClass.SubmitPayment.PerformPayment(meterNo, amt, dealerName, custName, custAddress, crCode, fixedCharge2,
-                 conlogTID, password, mtid, channelRefNo, phoneNo, collectionType, accountType, orgName, orgNo, invoiceNo, businessUnit);
-
+             conlogTID, password, mtid, channelRefNo, collectionType, invoiceNo, businessUnit);
             }
             else
             {
@@ -352,11 +337,6 @@ namespace PwkRESTWS
                 foreach (DataRow dr in dt.Rows)
                 {
                     string receiptNo = dr["receiptNo"].ToString();
-                    string accountType = dr["accountType"].ToString();
-                    string dtName = dr["dtName"].ToString();
-                    string dtNumber = dr["dtNumber"].ToString();
-                    string orgName = dr["orgName"].ToString();
-                    string orgNo = dr["orgNo"].ToString();
 
                     if (channelRefNo.StartsWith("WT") || channelRefNo.StartsWith("MT") || channelRefNo.StartsWith("PT") || channelRefNo.StartsWith("NT"))
                     {
@@ -383,11 +363,8 @@ namespace PwkRESTWS
                         bu = dr["businessUnit"].ToString();
                         agent = dr["dealerName"].ToString();
 
-                        string returnString = "1|time_receiptNo_reprint_cdu_sgc_tariff_meterNo_custName_acctNo_address_transactionAmt_amtTendered_costOfUnit_fixedCharge_vat_unit_purchaseAs_tokens_bottomMsg_collectionType_invoiceNo_bu_agent_AccountType_DtName_DtNumber_OrgName_OrgNo|"
-                        + time + "|" + receiptNo + "|" + dr["reprint"].ToString() + "|Operator Pawakad|" + sgc + "|" + tariff + "|" + meterNo + "|" + customer + "|" + acctNo
-                        + "|" + address + "|" + txnAmt + "|" + txnAmt + "|" + cou + "|" + fixedCharge + "|" + vat + "|" + dr["units"].ToString() + "|" + purchasedAs + "|"
-                        + token + "|" + bottonMsg + "|" + colectionType + "|" + invoiceNo + "|" + bu + "|" + agent + "|"
-                                                         + $"{accountType}|{dtName}|{dtNumber}|{orgName}|{orgNo}|"; // +creditBalance;
+                        string returnString = "1|time_receiptNo_reprint_cdu_sgc_tariff_meterNo_custName_acctNo_address_transactionAmt_amtTendered_costOfUnit_fixedCharge_vat_unit_purchaseAs_tokens_bottomMsg_collectionType_invoiceNo_bu_agent|"
+                        + time + "|" + receiptNo + "|" + dr["reprint"].ToString() + "|Operator Pawakad|" + sgc + "|" + tariff + "|" + meterNo + "|" + customer + "|" + acctNo + "|" + address + "|" + txnAmt + "|" + txnAmt + "|" + cou + "|" + fixedCharge + "|" + vat + "|" + dr["units"].ToString() + "|" + purchasedAs + "|" + token + "|" + bottonMsg + "|" + colectionType + "|" + invoiceNo + "|" + bu + "|" + agent + "|";// +creditBalance;
 
                         //log the mobile request
                         ClsPayment.LogMobileRequest2(dl.GetDealerCode(dealerUserName).ToString(), DateTime.Now, mtid, "GetReceipt", returnString);
@@ -411,11 +388,8 @@ namespace PwkRESTWS
                         bu = dr["businessUnit"].ToString();
                         agent = dr["dealerName"].ToString();
 
-                        string returnString = "1|time_receiptNo_reprint_cdu_sgc_tariff_meterNo_custName_acctNo_address_transactionAmt_amtTendered_costOfUnit_fixedCharge_vat_unit_purchaseAs_tokens_balance_bottomMsg_collectionType_invoiceNo_bu_agent_AccountType_DtName_DtNumber_OrgName_OrgNo|"
-                        + time + "|" + receiptNo + "|" + dr["reprint"].ToString() + "|Operator Pawakad|" + sgc + "|" + tariff + "|" + meterNo + "|" + customer + "|" + acctNo + "|" + address + "|"
-                        + txnAmt.ToString().Substring(0, txnAmt.ToString().IndexOf('.') + 3) + "|" + txnAmt.ToString().Substring(0, txnAmt.ToString().IndexOf('.') + 3) + "|||||||" + balance + "|"
-                        + bottonMsg + "|" + colectionType + "|" + invoiceNo + "|" + bu + "|" + agent + "|"
-                                                         + $"{accountType}|{dtName}|{dtNumber}|{orgName}|{orgNo}|";
+                        string returnString = "1|time_receiptNo_reprint_cdu_sgc_tariff_meterNo_custName_acctNo_address_transactionAmt_amtTendered_costOfUnit_fixedCharge_vat_unit_purchaseAs_tokens_balance_bottomMsg_collectionType_invoiceNo_bu_agent|"
+                        + time + "|" + receiptNo + "|" + dr["reprint"].ToString() + "|Operator Pawakad|" + sgc + "|" + tariff + "|" + meterNo + "|" + customer + "|" + acctNo + "|" + address + "|" + txnAmt.ToString().Substring(0, txnAmt.ToString().IndexOf('.') + 3) + "|" + txnAmt.ToString().Substring(0, txnAmt.ToString().IndexOf('.') + 3) + "|||||||" + balance + "|" + bottonMsg + "|" + colectionType + "|" + invoiceNo + "|" + bu + "|" + agent + "|";
 
                         //log the mobile request
                         ClsPayment.LogMobileRequest2(dl.GetDealerCode(dealerUserName).ToString(), DateTime.Now, mtid, "GetReceipt", returnString);
@@ -468,7 +442,7 @@ namespace PwkRESTWS
                     //ClsDealer dl = new ClsDealer();
                     ////log the mobile request
                     //ClsPayment.LogMobileRequest2(dl.GetDealerCode(dealerUserName).ToString(), DateTime.Now, mtid, "GetPaymentLog", "0|The account number has never been used on our platform");
-                    jsonString = "0|No message available";
+                    jsonString = "0|No question available";
                 }
 
 
@@ -552,7 +526,7 @@ namespace PwkRESTWS
                 }
                 else
                 {
-                    jsonString = "0|No message available";
+                    jsonString = "0|No question available";
                 }
 
                 //log the mobile resp
@@ -598,7 +572,7 @@ namespace PwkRESTWS
 
                     return "1|title_message_date|" + title + "|" + message + "|" + date;
                 }
-
+                
                 jsonString = "0|Invalid Msg Id";
             }
             else
@@ -606,57 +580,10 @@ namespace PwkRESTWS
                 jsonString = "0|Invalid_Request";
             }
 
-            //log the mobile response
-            ClsPayment.LogMobileRequest2(dl.GetDealerCode(dealerUserName).ToString(), DateTime.Now, mtid, "GetMsg", jsonString);
+            //log the mobile request
+            ClsPayment.LogMobileRequest2(dl.GetDealerCode(dealerUserName).ToString(), DateTime.Now, mtid, "GetMsg", jsonString); 
 
             return jsonString;
-        }
-
-        public string ResetPassword(string dealerUserName, string dealerEmail, string mtid)
-        {
-            string returnString = "0|Wrong details supplied";
-
-            ClsDealer dl = new ClsDealer();
-
-            string reqParams = $"dealerUserName:{dealerUserName}|dealerEmail:{dealerEmail}";
-
-            //log the mobile request
-            ClsPayment.LogMobileRequest2(dl.GetDealerCode(dealerUserName).ToString(), DateTime.Now, mtid + "|REQ", "ResetPassword", reqParams);
-
-            //the algorithm seems ideal but kinda slow
-            //List<char> l = mtid.ToList<char>();
-            //l = l.OrderBy(o => Guid.NewGuid().ToString()).ToList();
-
-            //StringBuilder newPassword = new StringBuilder();
-
-            //foreach (char c in l)
-            //    newPassword.Append(c.ToString());
-
-            string newPassword = mtid.Substring(2, 6);
-
-            if (dl.DealerEmailIsCorrect(dealerUserName, dealerEmail))
-            {
-                dl.ChangeDealerPassword(dealerUserName, MD5Crypt.MDee5(newPassword));
-
-                PortalMailer mailer = new PortalMailer();
-
-                mailer.subject = "Pawakad Password Reset Notification.";
-                mailer.emailTo = dealerEmail;
-                mailer.body = "Dear " + dealerUserName + ",<br><br>"
-                    + "You initiated a password reset from your mobile device<br>"
-                    + $"You new password is {newPassword}<br>"
-                    + $"We advice you logon to the web and change t to something different and suitable for you<br>"
-                    + "<br><br> Thank You.";
-
-                mailer.SendMail();
-                returnString = $"1|newPassword|{newPassword}";
-            }
-
-            mtid += "|RESP";
-            //log the mobile response
-            ClsPayment.LogMobileRequest2(dl.GetDealerCode(dealerUserName).ToString(), DateTime.Now, mtid, "ResetPassword", returnString);
-
-            return returnString;
         }
 
         public string Logout(string dealerUserName)
@@ -676,8 +603,7 @@ namespace PwkRESTWS
 
             int isLoginValid = dl.IsDealerLoginValid(userName, passWord);
 
-            return isLoginValid == 1;
+            return isLoginValid == 1 ? true : false;
         }
-
     }
 }
